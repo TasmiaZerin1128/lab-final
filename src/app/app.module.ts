@@ -3,14 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
+import { TakeInputsComponent } from './take-inputs/take-inputs.component';
+import { ShowInputsComponent } from './show-inputs/show-inputs.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TakeInputsComponent,
+    ShowInputsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
